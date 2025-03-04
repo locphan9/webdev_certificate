@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        <h1 id="title">Sleep Survey</h1>
+        <p id="description">This is a sleep survey for engineering students</p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <label id="name-label">Enter name: <input placeholder="John Doe" required id="name"type="text"></label>
+            <label id="email-label">Enter email <input placeholder="johndoe@gmail.com" required type="email" id="email"></label>
+            <label id="number-label">Enter hours of sleep: <input placeholder="8" min="0" max="24"type="number" id="number"></label>        
+            <select name="dropdown" id="dropdown">
+                <option value="Architect">Architect</option>
+                <option value="Mechanical">Mechanical</option>
+                <option value="Computer Science">Computer Science</option>
+            </select>   
+            <label for="first-year"><input type="radio" value="first-year"name="year">First Year</label>
+            <label for="second-year"><input type="radio" name="year" value="second-year"id="second-year">Second Year</label>
+            <input type="checkbox" name="checkbox"value="one">
+            <input type="checkbox" name="checkbox" value="two">
+            <textarea name="" id=""></textarea>
+            <button action="/submit"id="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
